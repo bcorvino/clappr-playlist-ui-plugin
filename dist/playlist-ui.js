@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define(["clappr"], factory);
 	else if(typeof exports === 'object')
-		exports["LevelSelector"] = factory(require("clappr"));
+		exports["PlaylistUI"] = factory(require("clappr"));
 	else
-		root["LevelSelector"] = factory(root["Clappr"]);
+		root["PlaylistUI"] = factory(root["Clappr"]);
 })(typeof self !== 'undefined' ? self : this, function(__WEBPACK_EXTERNAL_MODULE_84__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -1907,7 +1907,7 @@ exports = module.exports = __webpack_require__(88)(false);
 
 
 // module
-exports.push([module.i, ".playlist_ui[data-playlist_ui] {\n  float: right;\n  position: relative;\n  height: 100%; }\n  .playlist_ui[data-playlist_ui] button {\n    background-color: transparent;\n    color: #fff;\n    font-family: Roboto,\"Open Sans\",Arial,sans-serif;\n    -webkit-font-smoothing: antialiased;\n    border: none;\n    font-size: 12px;\n    height: 100%; }\n    .playlist_ui[data-playlist_ui] button:hover {\n      color: #c9c9c9; }\n    .playlist_ui[data-playlist_ui] button.changing {\n      -webkit-animation: pulse 0.5s infinite alternate; }\n  .playlist_ui[data-playlist_ui] > ul {\n    overflow-x: hidden;\n    overflow-y: auto;\n    list-style-type: none;\n    position: absolute;\n    bottom: 100%;\n    display: none;\n    background-color: rgba(28, 28, 28, 0.9);\n    white-space: nowrap; }\n  .playlist_ui[data-playlist_ui] li {\n    font-size: 12px;\n    color: #eee; }\n    .playlist_ui[data-playlist_ui] li[data-title] {\n      background-color: #333;\n      padding: 8px 25px; }\n    .playlist_ui[data-playlist_ui] li a {\n      color: #eee;\n      padding: 5px 18px;\n      display: block;\n      text-decoration: none; }\n      .playlist_ui[data-playlist_ui] li a:hover {\n        background-color: rgba(255, 255, 255, 0.1);\n        color: #fff; }\n        .playlist_ui[data-playlist_ui] li a:hover a {\n          color: #fff;\n          text-decoration: none; }\n    .playlist_ui[data-playlist_ui] li.current a {\n      color: #2ecc71; }\n", ""]);
+exports.push([module.i, ".playlist_ui[data-playlist-ui] {\n  float: right;\n  position: relative;\n  height: 100%; }\n  .playlist_ui[data-playlist-ui] button {\n    background-color: transparent;\n    color: #fff;\n    font-family: Roboto,\"Open Sans\",Arial,sans-serif;\n    -webkit-font-smoothing: antialiased;\n    border: none;\n    font-size: 12px;\n    height: 100%; }\n    .playlist_ui[data-playlist-ui] button:hover {\n      color: #c9c9c9; }\n    .playlist_ui[data-playlist-ui] button.changing {\n      -webkit-animation: pulse 0.5s infinite alternate; }\n  .playlist_ui[data-playlist-ui] > ul {\n    overflow-x: hidden;\n    overflow-y: auto;\n    list-style-type: none;\n    position: absolute;\n    bottom: 100%;\n    display: none;\n    background-color: rgba(28, 28, 28, 0.9);\n    white-space: nowrap; }\n  .playlist_ui[data-playlist-ui] li {\n    font-size: 12px;\n    color: #eee; }\n    .playlist_ui[data-playlist-ui] li[data-title] {\n      background-color: #333;\n      padding: 8px 25px; }\n    .playlist_ui[data-playlist-ui] li a {\n      color: #eee;\n      padding: 5px 18px;\n      display: block;\n      text-decoration: none; }\n      .playlist_ui[data-playlist-ui] li a:hover {\n        background-color: rgba(255, 255, 255, 0.1);\n        color: #fff; }\n        .playlist_ui[data-playlist-ui] li a:hover a {\n          color: #fff;\n          text-decoration: none; }\n    .playlist_ui[data-playlist-ui] li.current a {\n      color: #2ecc71; }\n", ""]);
 
 // exports
 
