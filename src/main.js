@@ -20,8 +20,8 @@ export default class PlaylistUI extends UICorePlugin {
 
   get events() {
     return {
-      'click [data-level-selector-select]': 'onLevelSelect',
-      'click [data-level-selector-button]': 'onShowLevelSelectMenu'
+      'click [data-playlist-ui-select]': 'onLevelSelect',
+      'click [data-playlist-ui-button]': 'onShowLevelSelectMenu'
     }
   }
 
@@ -85,7 +85,7 @@ export default class PlaylistUI extends UICorePlugin {
       this.$el.html(this.template({ 'levels':this.levels, 'title': this.getTitle() }))
       this.$el.append(style)
       this.core.mediaControl.$('.media-control-right-panel').append(this.el)
-      this.$('.level_selector ul').css('max-height', this.core.el.offsetHeight*0.8)
+      this.$('.playlist_ui ul').css('max-height', this.core.el.offsetHeight*0.8)
       this.highlightCurrentLevel()
     }
     return this
@@ -151,13 +151,13 @@ export default class PlaylistUI extends UICorePlugin {
 
   onShowLevelSelectMenu() { this.toggleContextMenu() }
 
-  hideSelectLevelMenu() { this.$('.level_selector ul').hide() }
+  hideSelectLevelMenu() { this.$('.playlist_ui ul').hide() }
 
-  toggleContextMenu() { this.$('.level_selector ul').toggle() }
+  toggleContextMenu() { this.$('.playlist_ui ul').toggle() }
 
-  buttonElement() { return this.$('.level_selector button') }
+  buttonElement() { return this.$('.playlist_ui button') }
 
-  levelElement(id) { return this.$('.level_selector ul a'+(!isNaN(id) ? '[data-level-selector-select="'+id+'"]' : '')).parent() }
+  levelElement(id) { return this.$('.playlist_ui ul a'+(!isNaN(id) ? '[data-playlist-ui-select="'+id+'"]' : '')).parent() }
 
   getTitle() { return (this.core.options.levelSelectorConfig || {}).title }
 
