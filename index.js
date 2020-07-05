@@ -1,3 +1,3 @@
-import LevelSelector from './src/main.js'
+import PlaylistUI from './src/main.js'
 
-export default LevelSelector
+export default PlaylistUI

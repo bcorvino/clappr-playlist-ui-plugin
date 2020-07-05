@@ -1,14 +1,14 @@
 import { Events, Styler, UICorePlugin, template } from 'clappr'
-import pluginHtml from './public/level-selector.html'
+import pluginHtml from './public/playlist-ui.html'
 import pluginStyle from './public/style.scss'
 
 const AUTO = -1
 
-export default class LevelSelector extends UICorePlugin {
+export default class PlaylistUI extends UICorePlugin {
 
   static get version() { return VERSION }
 
-  get name() { return 'level_selector' }
+  get name() { return 'playlist_ui' }
   get template() { return template(pluginHtml) }
 
   get attributes() {
