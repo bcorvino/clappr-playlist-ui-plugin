@@ -8,7 +8,7 @@ export default class PlaylistUI extends UICorePlugin {
 
   static get version() { return VERSION }
 
-  get name() { return 'playlist_ui' }
+  get name() { return 'level_selector' }
   get template() { return template(pluginHtml) }
 
   get attributes() {
