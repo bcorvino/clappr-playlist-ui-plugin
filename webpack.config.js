@@ -1,5 +1,5 @@
 const path = require('path')
-const filename = 'level-selector.js'
+const filename = 'playlist-ui.js'
 
 module.exports = {
   entry: path.resolve(__dirname, 'index.js'),
@@ -48,7 +48,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '<%=baseUrl%>/',
     filename: filename,
-    library: 'LevelSelector',
+    library: 'PlaylistUI',
     libraryTarget: 'umd',
   },
   devServer: {
